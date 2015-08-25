@@ -1,0 +1,37 @@
+/**
+ * Global app/site styles
+ */
+body {
+	background-color: $color-bg;
+	text-align: center;
+}
+
+/**
+ * Default layout container
+ */
+.l-container {
+	padding-left: #{$layout-margin}px;
+	padding-right: #{$layout-margin}px;
+	width: 95%;
+	max-width: #{$layout-max-width}px;
+	margin: 0 auto;
+
+	.lt-ie9 & {
+		min-width: #{$layout-min-width}px;
+	}
+}
+
+.emoji {
+	display: inline-block;
+	height: 200px;
+	margin: 0 auto;
+	width: 200px;
+	// vertical-align: middle;
+}
+
+.flag {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+}
